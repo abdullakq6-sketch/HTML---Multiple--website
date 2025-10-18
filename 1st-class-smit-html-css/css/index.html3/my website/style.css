@@ -1,0 +1,111 @@
+
+body {
+  margin: 0;
+  padding: 0;
+   font-family: Arial;
+}
+/* Navbar */
+#Navbar {
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+#navbar h1{
+  margin: 0;
+  font-size: 24px;
+}
+#navbar Ul{
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+#navbar li {
+  display: inline;
+  margin: 0 10px;
+  font-weight: bold;
+}
+/* Home Section */
+#home {
+  text-align: center;
+  padding: 40px;
+   background-color: #99aafb;
+   color: white;
+}
+/* About Section */
+#about { 
+  text-align: justify;
+  text-align: center;
+  padding: 30px;
+} 
+/* Portfolio Section */
+#portfolio {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 30px;
+}
+/* Experience Section */
+#Experience {
+text-align: justify;
+}
+/* Skills Section */
+#Skills {
+  text-align: justify;
+}
+/* Contact Section */
+#Contact {
+  text-align: center;
+  padding: 30px;
+}
+input, textarea {
+  width: 250px;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid gray;
+}
+button {
+  padding: 8px 16px;
+  background-color: #99aafb;
+  color: white;
+  border: none;
+}
+/* Footer */
+#footer {
+  background-color: lightgray;
+  text-align: center;
+  padding: 10px;
+}
+ Header Section 
+ header {
+  background-color: #99a8fb;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}  
+/* Navbar Section */
+ #navbar {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #007bff;
+} 

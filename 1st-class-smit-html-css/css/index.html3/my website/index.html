@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="navbar">
+    <h1>My Portfolio</h1>
+    <Ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Experience</li>
+      <li>Skills</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div id="home">
+    <h2>Welcome To My Portfolio</h2>
+    <p>This is a simple website made with HTML and CSS.</p>
+  </div>
+  <div id="About">
+    <h2>About</h2>
+    <p>
+       Hello! My name is Abdullah Khan.<br>
+    I am learning HTML, CSS, and JavaScript to become a web developer.<br>
+    I enjoy creating beautiful and functional websites and love learning new coding skills every day.<br>
+    </p>
+    <div id="Portfolio">
+    </div>
+      <div id="Experience">
+        <h2>Experience</h2>
+        <P>
+          Practicing Front-End Development using HTML, CSS, and JavaScript.<br>
+    Created personal projects like Portfolio Website, Calculator, and Login Page.<br>
+    Currently learning Web Development at Saylani Mass IT Training Program.<br>
+    Familiar with responsive design and basic JavaScript interactivity.<br>
+    Working to improve web design and layout skills daily.<br>
+    </P>
+     <div id="Skills">
+      <h2>Skills</h2> 
+      <P>
+        (HTML5)<br>
+        (CSS3)<br>
+        (GIT&GITHUB)<br>
+      </P>
+          <div id="Contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your Email"><br>
+      <textarea placeholder="Your Message"></textarea><br>
+      <button type="submit">Send</button>
+      </form>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h1>Clients</h1>
+  <title>Scrolling Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    .marquee-row {
+      position: relative;
+      overflow: hidden;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 10px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .marquee-content {
+      display: flex;
+      gap: 20px;
+      animation: scroll-left 25s linear infinite;
+    }
+
+    .marquee-row.reverse .marquee-content {
+      animation: scroll-right 25s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes scroll-right {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0); }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      flex-shrink: 0;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .handle {
+      color: gray;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 12px;
+      color: #777;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Row 1 -->
+  <div class="marquee-row">
+    <div class="marquee-content">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" alt="">
+        <p class="name">Briar Martin</p>
+        <p class="handle">@neilstellar</p>
+        <p class="desc">Radiant made undercutting all of our competitors an absolute breeze.</p>
+        <p class="date">April 20, 2025</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200" alt="">
+        <p class="name">Avery Johnson</p>
+        <p class="handle">@averywrites</p>
+        <p class="desc">Fantastic experience working with the Radiant team.</p>
+        <p class="date">May 10, 2025</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200" alt="">
+        <p class="name">Jordan Lee</p>
+        <p class="handle">@jordantalks</p>
+        <p class="desc">Excellent results and great communication!</p>
+        <p class="date">June 5, 2025</p>
+      </div>
+      <!-- Duplicate for smooth scroll -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" alt="">
+        <p class="name">Briar Martin</p>
+        <p class="handle">@neilstellar</p>
+        <p class="desc">Radiant made undercutting all of our competitors an absolute breeze.</p>
+        <p class="date">April 20, 2025</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 (Reverse Direction) -->
+  <div class="marquee-row reverse">
+    <div class="marquee-content">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200" alt="">
+        <p class="name">Chris Taylor</p>
+        <p class="handle">@christech</p>
+        <p class="desc">Loved how seamless the entire process was!</p>
+        <p class="date">July 1, 2025</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=200" alt="">
+        <p class="name">Maya Patel</p>
+        <p class="handle">@mayacodes</p>
+        <p class="desc">Incredible results with a wonderful team.</p>
+        <p class="date">August 12, 2025</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200" alt="">
+        <p class="name">Alex Kim</p>
+        <p class="handle">@alexdesign</p>
+        <p class="desc">Amazing speed and quality — highly recommend.</p>
+        <p class="date">September 15, 2025</p>
+      </div>
+      <!-- Duplicate for continuous scroll -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200" alt="">
+        <p class="name">Chris Taylor</p>
+        <p class="handle">@christech</p>
+        <p class="desc">Loved how seamless the entire process was!</p>
+        <p class="date">July 1, 2025</p>
+      </div>
+    </div>
+  </div>
+    <div id="footer">
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
